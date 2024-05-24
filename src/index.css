@@ -1,3 +1,5 @@
+
+/* This directive imports Tailwind's base styles into your CSS. The base styles include a CSS reset and default styles that make sure your site has a consistent starting point across different browsers. It includes styles for HTML elements, setting margins, padding, and other default properties. */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

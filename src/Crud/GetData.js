@@ -16,25 +16,26 @@ const GetData = () => {
         }
     }
     useEffect(() => {
-        data()
+        data();
     }, [])
-    console.log(mapData)
+
     return (
         <div className="m-5">
-            <h3>This is Data Table</h3>
+            <h1>This is Data Table</h1>
             <table>
                 <tr>
                     <th>ID</th>
                     <th>UserId</th>
                     <th>Title</th>
-                    {/* <th>Completed</th> */}
+                    <th>Completed</th>
                 </tr>
                 {mapData?.map((item, i) => (
                     <tr key={i}>
                         <td className="text-center">{item.id}</td>
-                        <td>{item.userId}</td>
+                        <td className="text-center">{item.userId}</td>
                         <td className="flex justify-center  ">{item.title}</td>
-                        {/* <td>{item.completed}</td> */}
+                        <td className="text-center">{item?.completed.toString().charAt(0).toUpperCase()}{item?.completed.toString().slice(1)}</td>
+                        {/* we have added toString( because i m getting item?.completed in boolean form not in string form) */}
                     </tr>))}
             </table>
         </div>

@@ -4,6 +4,10 @@ import './App.css';
 import { Route,BrowserRouter as Router, Routes } from "react-router-dom";
 import Create from "./Crud/Create";
 import GetData from "./Crud/GetData";
+import WhereToUse from './notes/hoc/WhereToUse';
+import WhereToUseFunction from './notes/hof/WhereToUseFunction';
+import Hoisting from './notes/Hoisting';
+import Debugger from './notes/Debugger';
 
 function App() {
   return (
@@ -12,6 +16,10 @@ function App() {
   <Routes>
     <Route path="/" element={ <GetData /> } />
     <Route path="/create" element={ <Create/> } />
+    <Route path="/hoisting" element={ <Hoisting /> } />
+    <Route path="/debugger" element={ <Debugger /> } />
+    <Route path="/whereToUsecomponent" element={ <WhereToUse/> } />
+    <Route path="/whereToUsefunction" element={ <WhereToUseFunction /> } />
   </Routes>
 </Router>
    </>

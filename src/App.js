@@ -9,6 +9,7 @@ import WhereToUseFunction from './notes/hof/WhereToUseFunction';
 import Hoisting from './notes/Hoisting';
 import Debugger from './notes/Debugger';
 import ScopeChain from './notes/ScopeChain';
+import Update from './Crud/Update';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
   <Routes>
     <Route path="/" element={ <GetData /> } />
     <Route path="/create" element={ <Create/> } />
+    <Route path="/update" element={ <Update/> } />
     <Route path="/hoisting" element={ <Hoisting /> } />
     <Route path="/debugger" element={ <Debugger /> } />
     <Route path="/scopechain" element={ <ScopeChain /> } />

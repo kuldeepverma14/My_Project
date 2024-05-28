@@ -14,8 +14,11 @@ const Create = () => {
             console.log(err)
         }
     }
-
-
+// debugger;
+var a ;
+console.log(a)
+a = 5
+console.log(a)
     return (
         <>
             <form onSubmit={handleSubmit(onSubmit)} className="m-5 grid grid-cols-2 gap-10">

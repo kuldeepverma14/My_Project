@@ -9,6 +9,9 @@ const Create = () => {
         try {
             const res = await axios.post('https://dummyjson.com/products/add', data)
             console.log(res)
+            if(res.status===200){
+                alert("Created")
+            }
         }
         catch (err) {
             console.log(err)

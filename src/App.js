@@ -18,7 +18,7 @@ function App() {
   <Routes>
     <Route path="/" element={ <GetData /> } />
     <Route path="/create" element={ <Create/> } />
-    <Route path="/update" element={ <Update/> } />
+    <Route path="/update/:id" element={ <Update/> } />
     <Route path="/hoisting" element={ <Hoisting /> } />
     <Route path="/debugger" element={ <Debugger /> } />
     <Route path="/scopechain" element={ <ScopeChain /> } />

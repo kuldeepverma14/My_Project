@@ -7,7 +7,7 @@ const Create = () => {
 
     const onSubmit = async (data) => {
         try {
-            const res = await axios.post("https://dummyjson.com/posts/add", data)
+            const res = await axios.post('https://dummyjson.com/products/add', data)
             console.log(res)
         }
         catch (err) {
@@ -54,9 +54,9 @@ const Create = () => {
                     {/* { required: true } is compulsory to show errors */}
                 </div>
                 <div className="flex flex-col">
-                    <label htmlFor="userId" > User Id </label>
-                    <input className="border border-black" {...register("userId", { required: true })} />
-                    {errors.userId && <span>This is required field</span>}
+                    <label htmlFor="tags" > Tags </label>
+                    <input className="border border-black" {...register("tags", { required: true })} />
+                    {errors.tags && <span>This is required field</span>}
                 </div>
                 <button type="submit" >Submit</button>
             </form>

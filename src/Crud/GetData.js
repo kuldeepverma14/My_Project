@@ -2,9 +2,11 @@ import axios from "axios"
 import { useEffect, useState } from "react"
 import { useForm } from "react-hook-form"
 import { Link, useNavigate } from "react-router-dom"
+import Debouncing from "../notes/Debouncing"
 
 
 const GetData = () => {
+
     const navigate = useNavigate()
     const [mapData, setMapData] = useState(null)
     const [updateData, setUpdateData] = useState(null)

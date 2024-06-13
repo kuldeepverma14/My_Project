@@ -10,6 +10,8 @@ import Hoisting from './notes/Hoisting';
 import Debugger from './notes/Debugger';
 import ScopeChain from './notes/ScopeChain';
 import Update from './Crud/Update';
+import NestedDropdown from './NestedDropdown';
+import Debouncing from './notes/Debouncing';
 
 function App() {
   return (
@@ -19,7 +21,9 @@ function App() {
     <Route path="/" element={ <GetData /> } />
     <Route path="/create" element={ <Create/> } />
     <Route path="/update/:id" element={ <Update/> } />
+    <Route path="/NestedDropdown" element={ <NestedDropdown /> } />
     <Route path="/hoisting" element={ <Hoisting /> } />
+    <Route path="/debouncing" element={ <Debouncing /> } />
     <Route path="/debugger" element={ <Debugger /> } />
     <Route path="/scopechain" element={ <ScopeChain /> } />
     <Route path="/whereToUsecomponent" element={ <WhereToUse/> } />
